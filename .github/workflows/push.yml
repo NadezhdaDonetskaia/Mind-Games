@@ -1,10 +1,12 @@
 name: linter
 on: push
 jobs:
-  my-job:
+  push:
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo
         uses: actions/checkout@v2
-      - name: build brain_games
-        run: make build
+      - name: Install Linter
+        run: pip install flake8
+      - name: Run Linter
+          run: make lint
