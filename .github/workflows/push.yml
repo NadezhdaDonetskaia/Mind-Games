@@ -9,4 +9,4 @@ jobs:
       - name: Install Linter
         run: pip install flake8
       - name: Run Linter
-          run: make lint
+        run: make lint
