@@ -6,7 +6,9 @@ jobs:
     steps:
       - name: checkout repo
         uses: actions/checkout@v2
-      - name: Install Linter
-        run: pip install flake8
-      - name: Run Linter
+      - name: Install Dependencies
+        run: |
+          pip install poetry
+          make install
+      - name: Run linter
         run: make lint
