@@ -10,3 +10,6 @@ is_even
 
 calc
 [![asciicast](https://asciinema.org/a/Vy1oFZM2t4Or8OS0PxNADgdmD.svg)](https://asciinema.org/a/Vy1oFZM2t4Or8OS0PxNADgdmD)
+
+greatest common divisor
+[![asciicast](https://asciinema.org/a/Du6yt5hWa9AksN0no5NZp4VgG.svg)](https://asciinema.org/a/Du6yt5hWa9AksN0no5NZp4VgG)

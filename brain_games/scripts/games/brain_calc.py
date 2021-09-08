@@ -18,7 +18,7 @@ def questions_answers():
         operators = random.choice(['+', '-', '*'])
         num1 = random.randint(1, 100)
         num2 = random.randint(1, 100)
-        result.append((f'{num1} {operators} {num2}', calc(num1, num2, operators)))
+        result.append((f'{num1} {operators} {num2}', calc(num1, num2, operators)))  # noqa: <error code>
     return result
 
 
