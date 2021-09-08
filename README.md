@@ -16,3 +16,6 @@ greatest common divisor
 
 progression
 [![asciicast](https://asciinema.org/a/cLGeOnl60vMSb2bgucOYbxhMQ.svg)](https://asciinema.org/a/cLGeOnl60vMSb2bgucOYbxhMQ)
+
+is_prime
+[![asciicast](https://asciinema.org/a/G4WmcnWFXcUijaE9owaK0EPgA.svg)](https://asciinema.org/a/G4WmcnWFXcUijaE9owaK0EPgA)
