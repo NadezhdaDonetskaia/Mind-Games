@@ -27,7 +27,8 @@ def my_simple(num):
 def prime_question_answer():
     result = []
     num = random.randint(1, 1000)
-    result.append((num, my_simple(num)))
+    result.append(num)
+    result.append(my_simple(num))
     return result
 
 

@@ -16,7 +16,8 @@ def gcd_question_answer():
     result = []
     num1 = random.randint(1, 100)
     num2 = random.randint(1, 100)
-    result.append((f'{num1} {num2}', gcf(num1, num2)))
+    result.append(f'{num1} {num2}')
+    result.append(gcf(num1, num2))
     return result
 
 

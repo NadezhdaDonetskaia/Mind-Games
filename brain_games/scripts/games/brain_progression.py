@@ -23,7 +23,8 @@ def progression_question_answer():
     step = random.randint(2, 15)
     progr = progression(first_num, len_progr, step)
     miss_num = missing_num(progr)
-    result.append((progression_without_num(progr, miss_num), miss_num))  # noqa: <error code>
+    result.append(progression_without_num(progr, miss_num))
+    result.append(miss_num)
     return result
 
 

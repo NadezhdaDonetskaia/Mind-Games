@@ -12,7 +12,8 @@ def is_even(num):
 def even_question_answer():
     result = []
     num = random.randint(1, 100)
-    result.append((num, is_even(num)))
+    result.append(num)
+    result.append(is_even(num))
     return result
 
 
