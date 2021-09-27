@@ -24,18 +24,17 @@ def my_simple(num):
     return 'no'
 
 
-def questions_answers():
+def question_answer():
     result = []
-    for i in range(3):
-        num = random.randint(1, 1000)
-        result.append((num, my_simple(num)))
+    num = random.randint(1, 1000)
+    result.append((num, my_simple(num)))
     return result
 
 
 def main():
     rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
     name = welcome_user()
-    game(name, rule, questions_answers())
+    game(name, rule, question_answer)
 
 
 if __name__ == '__main__':

@@ -9,18 +9,17 @@ def is_even(num):
     return 'no'
 
 
-def questions_answers():
+def question_answer():
     result = []
-    for i in range(3):
-        num = random.randint(1, 100)
-        result.append((num, is_even(num)))
+    num = random.randint(1, 100)
+    result.append((num, is_even(num)))
     return result
 
 
 def main():
     rule = 'Answer "yes" if the number is even, otherwise answer "no".'
     name = welcome_user()
-    game(name, rule, questions_answers())
+    game(name, rule, question_answer)
 
 
 if __name__ == '__main__':

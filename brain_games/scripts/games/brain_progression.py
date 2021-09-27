@@ -16,22 +16,21 @@ def progression_without_num(progr, num):
     return ' '.join([str(x) if x != int(num) else '..' for x in progr])
 
 
-def questions_answers():
+def question_answer():
     result = []
-    for i in range(3):
-        first_num = random.randint(1, 20)
-        len_progr = random.randint(5, 15)
-        step = random.randint(2, 15)
-        progr = progression(first_num, len_progr, step)
-        miss_num = missing_num(progr)
-        result.append((progression_without_num(progr, miss_num), miss_num))  # noqa: <error code>
+    first_num = random.randint(1, 20)
+    len_progr = random.randint(5, 15)
+    step = random.randint(2, 15)
+    progr = progression(first_num, len_progr, step)
+    miss_num = missing_num(progr)
+    result.append((progression_without_num(progr, miss_num), miss_num))  # noqa: <error code>
     return result
 
 
 def main():
     rule = 'What number is missing in the progression?'
     name = welcome_user()
-    game(name, rule, questions_answers())
+    game(name, rule, question_answer)
 
 
 if __name__ == '__main__':

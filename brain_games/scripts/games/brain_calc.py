@@ -12,20 +12,20 @@ def calc(num1, num2, operator):
         return str(num1 * num2)
 
 
-def questions_answers():
+def question_answer():
     result = []
-    for i in range(3):
-        operators = random.choice(['+', '-', '*'])
-        num1 = random.randint(1, 100)
-        num2 = random.randint(1, 100)
-        result.append((f'{num1} {operators} {num2}', calc(num1, num2, operators)))  # noqa: <error code>
+    operators = random.choice(['+', '-', '*'])
+    num1 = random.randint(1, 100)
+    num2 = random.randint(1, 100)
+    result.append(f'{num1} {operators} {num2}')
+    result.append(calc(num1, num2, operators))
     return result
 
 
 def main():
     rule = 'What is the result of the expression?'
     name = welcome_user()
-    game(name, rule, questions_answers())
+    game(name, rule, question_answer)
 
 
 if __name__ == '__main__':

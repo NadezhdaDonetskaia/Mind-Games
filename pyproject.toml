@@ -1,11 +1,20 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "brain-games"
+classifiers = [
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Libraries :: Code Quality"
+]
 authors = ["Nella <nella611@yandex.ru>"]
 packages = [
   { include = "brain_games" },
 ]
+
+[[tool.poetry.source]]
+name = 'Nella611'
+url = 'https://github.com/Nella611/python-project-lvl1'
 
 [tool.poetry.dependencies]
 python = "^3.8"
