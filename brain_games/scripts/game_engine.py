@@ -19,7 +19,7 @@ def game(name_user, rule, questions_answers):
         if answer_user == answer:
             print('Correct!')
         else:
-            print(f"'{answer_user}' is wrong answer ;(. Correct answer was '{answer}'")
+            print(f"'{answer_user}' is wrong answer ;(. Correct answer was '{answer}'")  # noqa: <error code>
             print(f"Let's try again, {name_user}!")
             break
         if i == 2:

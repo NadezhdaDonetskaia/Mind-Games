@@ -12,7 +12,7 @@ def calc(num1, num2, operator):
         return str(num1 * num2)
 
 
-def question_answer():
+def calc_question_answer():
     result = []
     operators = random.choice(['+', '-', '*'])
     num1 = random.randint(1, 100)
@@ -25,7 +25,7 @@ def question_answer():
 def main():
     rule = 'What is the result of the expression?'
     name = welcome_user()
-    game(name, rule, question_answer)
+    game(name, rule, calc_question_answer)
 
 
 if __name__ == '__main__':

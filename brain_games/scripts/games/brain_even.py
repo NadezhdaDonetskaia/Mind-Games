@@ -9,7 +9,7 @@ def is_even(num):
     return 'no'
 
 
-def question_answer():
+def even_question_answer():
     result = []
     num = random.randint(1, 100)
     result.append((num, is_even(num)))
@@ -19,7 +19,7 @@ def question_answer():
 def main():
     rule = 'Answer "yes" if the number is even, otherwise answer "no".'
     name = welcome_user()
-    game(name, rule, question_answer)
+    game(name, rule, even_question_answer)
 
 
 if __name__ == '__main__':

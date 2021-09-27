@@ -12,7 +12,7 @@ def gcf(num1, num2):
     return str(num1 + num2)
 
 
-def question_answer():
+def gcd_question_answer():
     result = []
     num1 = random.randint(1, 100)
     num2 = random.randint(1, 100)
@@ -23,7 +23,7 @@ def question_answer():
 def main():
     rule = 'Find the greatest common divisor of given numbers.'
     name = welcome_user()
-    game(name, rule, question_answer)
+    game(name, rule, gcd_question_answer)
 
 
 if __name__ == '__main__':

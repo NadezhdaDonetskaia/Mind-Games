@@ -16,7 +16,7 @@ def progression_without_num(progr, num):
     return ' '.join([str(x) if x != int(num) else '..' for x in progr])
 
 
-def question_answer():
+def progression_question_answer():
     result = []
     first_num = random.randint(1, 20)
     len_progr = random.randint(5, 15)
@@ -30,7 +30,7 @@ def question_answer():
 def main():
     rule = 'What number is missing in the progression?'
     name = welcome_user()
-    game(name, rule, question_answer)
+    game(name, rule, progression_question_answer)
 
 
 if __name__ == '__main__':
