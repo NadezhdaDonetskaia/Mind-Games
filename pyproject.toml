@@ -13,7 +13,7 @@ packages = [
 ]
 
 [[tool.poetry.source]]
-name = 'Nella611'
+name = 'hexlet-code'
 url = 'https://github.com/Nella611/python-project-lvl1'
 
 [tool.poetry.dependencies]
