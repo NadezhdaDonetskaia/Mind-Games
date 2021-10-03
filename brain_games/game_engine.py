@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import prompt
 
+
 def welcome_user():
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
@@ -24,6 +25,3 @@ def start_game(rule, questions_answers):
             break
         if i == 2:
             print(f'Congratulations, {user_name}!')
-
-
-

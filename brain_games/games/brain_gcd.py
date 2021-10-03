@@ -20,4 +20,3 @@ def get_gcd_question_answer():
     question = f'{num1} {num2}'
     answer = get_gcf(num1, num2)
     return (question, answer)
-

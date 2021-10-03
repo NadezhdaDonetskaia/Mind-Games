@@ -20,4 +20,3 @@ def get_calc_question_answer():
     question = f'{num1} {operators} {num2}'
     answer = get_calc(num1, num2, operators)
     return (question, answer)
-

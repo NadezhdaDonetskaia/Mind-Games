@@ -27,4 +27,3 @@ def get_progression_question_answer():
     question = get_progression_without_num(progr, miss_num)
     answer = miss_num
     return (question, answer)
-
