@@ -15,7 +15,8 @@ max_common_diff = 15
 
 
 def get_progression(first_num, num_of_el, common_diff):
-    return [x for x in range(first_num, first_num + num_of_el * common_diff, common_diff)]
+    return [x for x in range(
+        first_num, first_num + num_of_el * common_diff, common_diff)]
 
 
 def get_missing_num(progr):
@@ -32,7 +33,7 @@ def get_progression_question_answer():
     num_of_el = random.randint(min_num_of_el, max_num_of_el)
     common_diff = random.randint(min_common_diff, max_common_diff)
     progr = get_progression(first_num, num_of_el, common_diff)
-    miss_num = str(get_missing_num(progr))
+    miss_num = get_missing_num(progr)
     question = get_progression_without_num(progr, miss_num)
-    answer = miss_num
+    answer = str(miss_num)
     return (question, answer)
