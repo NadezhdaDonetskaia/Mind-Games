@@ -5,25 +5,30 @@ import random
 rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def get_is_prime(num):
+# функция нужна для реализации «Решета Эратосфена»
+def is_in_prime_list(num, prime_list):
+    for el in prime_list:
+        if num % el == 0:
+            return False
+    return True
+
+
+def is_prime(num):
     prime_nums = [2]
-    counter = 3
-    while counter <= num:
-        for n in prime_nums:
-            if num % n == 0:
-                counter = num + 1
-                break
-            if counter == num:
-                return 'yes'
-        prime_nums.append(counter)
-        counter += 1
-    if num in prime_nums:
-        return 'yes'
-    return 'no'
+    """
+    собираем все простые числа до нашего числа
+    """
+    for i in range(3, num + 1):
+        if is_in_prime_list(i, prime_nums):
+            prime_nums.append(i)
+    return num in prime_nums
 
 
 def get_prime_question_answer():
     num = random.randint(1, 1000)
     question = num
-    answer = get_is_prime(num)
+    if is_prime(num):
+        answer = 'yes'
+    else:
+        answer = 'no'
     return (question, answer)
