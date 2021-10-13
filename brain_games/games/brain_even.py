@@ -2,20 +2,18 @@
 import random
 
 
-rule = 'Answer "yes" if the number is even, otherwise answer "no".'
+RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
+# диапозон числа, среди которых будем проверять на четность и нечетность
+FROM_NUM = 1
+TO_NUM = 1000
 
 
 def is_even(num):
-    if num % 2 == 0:
-        return True
-    return False
+    return num % 2 == 0
 
 
 def get_even_question_answer():
-    num = random.randint(1, 100)
+    num = random.randint(FROM_NUM, TO_NUM)
     question = num
-    if is_even(num):
-        answer = 'yes'
-    else:
-        answer = 'no'
-    return (question, answer)
+    answer = 'yes' if is_even(num) else 'no'
+    return question, answer

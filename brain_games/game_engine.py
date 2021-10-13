@@ -2,7 +2,7 @@
 import prompt
 
 
-num_of_rounds = 3
+NUM_OF_ROUNDS = 3
 
 
 def welcome_user():
@@ -15,7 +15,7 @@ def welcome_user():
 def run_game(rule, get_questions_answers):
     user_name = welcome_user()
     print(rule)
-    for i in range(num_of_rounds):
+    for i in range(NUM_OF_ROUNDS):
         question, answer = get_questions_answers()
         answer_user = prompt.string(f'Question: {question}\n'
                                     f'Your answer: ')
@@ -25,6 +25,5 @@ def run_game(rule, get_questions_answers):
             print(f"'{answer_user}' is wrong answer ;(. "
                   f"Correct answer was '{answer}'")
             print(f"Let's try again, {user_name}!")
-            break
-        if i == 2:
-            print(f'Congratulations, {user_name}!')
+            return
+    print(f'Congratulations, {user_name}!')

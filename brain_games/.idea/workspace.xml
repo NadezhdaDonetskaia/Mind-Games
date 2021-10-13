@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b91a22f-0420-41f1-99f6-1e1879687041" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/games/brain_progression.py" beforeDir="false" afterPath="$PROJECT_DIR$/games/brain_progression.py" afterDir="false" />
-    </list>
+    <list default="true" id="2b91a22f-0420-41f1-99f6-1e1879687041" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +36,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../python-basics/lesson2.py" />
+    <property name="last_opened_file_path" value="$USER_HOME$/GeekBrains/Основы Django Framework/geekshop-server/geekshop" />
   </component>
   <component name="RunManager" selected="Python.brain_progression">
     <configuration name="brain_progression" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -114,26 +111,26 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1633532012362">
+    <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1633540130786">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl/72.27.1294.741@72.27.1294.741" timestamp="1633532012362" />
-    <state width="1271" height="164" key="GridCell.Tab.0.bottom" timestamp="1633536187025">
+    <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl/72.27.1294.741@72.27.1294.741" timestamp="1633540130786" />
+    <state width="1271" height="164" key="GridCell.Tab.0.bottom" timestamp="1633540132335">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1271" height="164" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1633536187025" />
-    <state width="1271" height="164" key="GridCell.Tab.0.center" timestamp="1633536187024">
+    <state width="1271" height="164" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1633540132335" />
+    <state width="1271" height="164" key="GridCell.Tab.0.center" timestamp="1633540132335">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1271" height="164" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1633536187024" />
-    <state width="1271" height="164" key="GridCell.Tab.0.left" timestamp="1633536187024">
+    <state width="1271" height="164" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1633540132335" />
+    <state width="1271" height="164" key="GridCell.Tab.0.left" timestamp="1633540132334">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1271" height="164" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1633536187024" />
-    <state width="1271" height="164" key="GridCell.Tab.0.right" timestamp="1633536187025">
+    <state width="1271" height="164" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1633540132334" />
+    <state width="1271" height="164" key="GridCell.Tab.0.right" timestamp="1633540132335">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1271" height="164" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1633536187025" />
+    <state width="1271" height="164" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1633540132335" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

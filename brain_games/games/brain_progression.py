@@ -2,16 +2,16 @@
 import random
 
 
-rule = 'What number is missing in the progression?'
-# первое число от 1 до 20
-min_first_num = 1
-max_first_num = 20
+RULE = 'What number is missing in the progression?'
+# первое число в прогрессии от 1 до 20
+MIN_FIRST_NUM = 1
+MAX_FIRST_NUM = 20
 # количество элементов прогрессии от 5 до 15
-min_num_of_el = 5
-max_num_of_el = 15
+MIN_NUM_OF_EL = 5
+MAX_NUM_OF_EL = 15
 # общая разность варьируетсяот  2 до 15
-min_common_diff = 2
-max_common_diff = 15
+MIN_COMMON_DIFF = 2
+MAX_COMMON_DIFF = 15
 
 
 def get_progression(first_num, num_of_el, common_diff):
@@ -29,11 +29,11 @@ def get_progression_without_num(progr, num):
 
 
 def get_progression_question_answer():
-    first_num = random.randint(min_first_num, max_first_num)
-    num_of_el = random.randint(min_num_of_el, max_num_of_el)
-    common_diff = random.randint(min_common_diff, max_common_diff)
+    first_num = random.randint(MIN_FIRST_NUM, MAX_FIRST_NUM)
+    num_of_el = random.randint(MIN_NUM_OF_EL, MAX_NUM_OF_EL)
+    common_diff = random.randint(MIN_COMMON_DIFF, MAX_COMMON_DIFF)
     progr = get_progression(first_num, num_of_el, common_diff)
     miss_num = get_missing_num(progr)
     question = get_progression_without_num(progr, miss_num)
     answer = str(miss_num)
-    return (question, answer)
+    return question, answer

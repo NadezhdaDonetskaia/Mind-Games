@@ -2,7 +2,10 @@
 import random
 
 
-rule = 'Find the greatest common divisor of given numbers.'
+RULE = 'Find the greatest common divisor of given numbers.'
+# диапозон чисел, среди которых будем искать наибольший общий делитель
+FROM_NUM = 1
+TO_NUM = 1000
 
 
 def get_gcd(num1, num2):
@@ -15,8 +18,8 @@ def get_gcd(num1, num2):
 
 
 def get_gcd_question_answer():
-    num1 = random.randint(1, 100)
-    num2 = random.randint(1, 100)
+    num1 = random.randint(FROM_NUM, TO_NUM)
+    num2 = random.randint(FROM_NUM, TO_NUM)
     question = f'{num1} {num2}'
     answer = str(get_gcd(num1, num2))
-    return (question, answer)
+    return question, answer
