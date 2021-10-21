@@ -19,21 +19,28 @@ def get_progression(first_num, num_of_el, common_diff):
         first_num, first_num + num_of_el * common_diff, common_diff)]
 
 
-def get_missing_num(progr):
-    ind = random.randint(0, len(progr) - 1)
-    return progr[ind]
+def get_missing_num(progression):
+    ind = random.randint(0, len(progression) - 1)
+    return progression[ind]
 
 
-def get_progression_without_num(progr, num):
-    return ' '.join([str(x) if x != num else '..' for x in progr])
+def get_progression_without_num(progression, num):
+    # в данной конкретной задаче числа не повторяются, поэтому думаю,
+    # что данное решение всё же имеет место быть:
+    # return ' '.join([str(x) if x != num else '..' for x in progression])
+    # но раз преподаватель сделал замечание, что лучше искать число по индексу,
+    # то решение ниже, хоть и не проще
+    ind = progression.index(num)
+    return ' '.join([str(progression[x]) if x != ind else '..'
+                     for x in range(len(progression))])
 
 
 def get_progression_question_answer():
     first_num = random.randint(MIN_FIRST_NUM, MAX_FIRST_NUM)
     num_of_el = random.randint(MIN_NUM_OF_EL, MAX_NUM_OF_EL)
     common_diff = random.randint(MIN_COMMON_DIFF, MAX_COMMON_DIFF)
-    progr = get_progression(first_num, num_of_el, common_diff)
-    miss_num = get_missing_num(progr)
-    question = get_progression_without_num(progr, miss_num)
+    progression = get_progression(first_num, num_of_el, common_diff)
+    miss_num = get_missing_num(progression)
+    question = get_progression_without_num(progression, miss_num)
     answer = str(miss_num)
     return question, answer
