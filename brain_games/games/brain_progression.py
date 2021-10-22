@@ -9,7 +9,7 @@ MAX_FIRST_NUM = 20
 # количество элементов прогрессии от 5 до 15
 MIN_NUM_OF_EL = 5
 MAX_NUM_OF_EL = 15
-# общая разность варьируетсяот  2 до 15
+# общая разность варьируется от  2 до 15
 MIN_COMMON_DIFF = 2
 MAX_COMMON_DIFF = 15
 
@@ -19,18 +19,7 @@ def get_progression(first_num, num_of_el, common_diff):
         first_num, first_num + num_of_el * common_diff, common_diff)]
 
 
-def get_missing_num(progression):
-    ind = random.randint(0, len(progression) - 1)
-    return progression[ind]
-
-
-def get_progression_without_num(progression, num):
-    # в данной конкретной задаче числа не повторяются, поэтому думаю,
-    # что данное решение всё же имеет место быть:
-    # return ' '.join([str(x) if x != num else '..' for x in progression])
-    # но раз преподаватель сделал замечание, что лучше искать число по индексу,
-    # то решение ниже, хоть и не проще
-    ind = progression.index(num)
+def get_progression_without_num(progression, ind):
     return ' '.join([str(progression[x]) if x != ind else '..'
                      for x in range(len(progression))])
 
@@ -40,7 +29,8 @@ def get_progression_question_answer():
     num_of_el = random.randint(MIN_NUM_OF_EL, MAX_NUM_OF_EL)
     common_diff = random.randint(MIN_COMMON_DIFF, MAX_COMMON_DIFF)
     progression = get_progression(first_num, num_of_el, common_diff)
-    miss_num = get_missing_num(progression)
-    question = get_progression_without_num(progression, miss_num)
+    ind_miss_mun = random.randint(0, len(progression) - 1)
+    miss_num = progression[ind_miss_mun]
+    question = get_progression_without_num(progression, ind_miss_mun)
     answer = str(miss_num)
     return question, answer
