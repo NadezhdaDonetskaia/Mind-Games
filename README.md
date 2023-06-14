@@ -1,3 +1,9 @@
+## Mind Games
+
+A collection of five console games designed based on the principles of popular brain-training mobile applications. 
+Each game presents questions that require correct answers. After three consecutive correct answers, the game is considered passed.
+Incorrect answers terminate the game and prompt the player to start again.
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Nella611/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Nella611/python-project-lvl1/actions)
 
