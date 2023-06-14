@@ -11,17 +11,17 @@ Incorrect answers terminate the game and prompt the player to start again.
 
 [![Actions Status](https://github.com/Nella611/python-project-lvl1/workflows/linter/badge.svg)](https://github.com/Nella611/python-project-lvl1/actions)
 
-is_even
+is_even  
 [![asciicast](https://asciinema.org/a/A3aIKx4C5lLUgrThbiohX8PNF.svg)](https://asciinema.org/a/A3aIKx4C5lLUgrThbiohX8PNF)
 
-calc
+calc  
 [![asciicast](https://asciinema.org/a/Vy1oFZM2t4Or8OS0PxNADgdmD.svg)](https://asciinema.org/a/Vy1oFZM2t4Or8OS0PxNADgdmD)
 
-greatest common divisor
+greatest common divisor  
 [![asciicast](https://asciinema.org/a/Du6yt5hWa9AksN0no5NZp4VgG.svg)](https://asciinema.org/a/Du6yt5hWa9AksN0no5NZp4VgG)
 
-progression
+progression  
 [![asciicast](https://asciinema.org/a/cLGeOnl60vMSb2bgucOYbxhMQ.svg)](https://asciinema.org/a/cLGeOnl60vMSb2bgucOYbxhMQ)
 
-is_prime
+is_prime  
 [![asciicast](https://asciinema.org/a/G4WmcnWFXcUijaE9owaK0EPgA.svg)](https://asciinema.org/a/G4WmcnWFXcUijaE9owaK0EPgA)
